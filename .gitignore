@@ -1,0 +1,11 @@
+# 日志文件（launchd 定时任务输出，本地运行产物）
+launchd-stdout.log
+launchd-stderr.log
+*.log
+
+# macOS 系统文件
+.DS_Store
+**/.DS_Store
+
+# Claude Code 本地权限配置（含本机路径，不提交）
+.claude/settings.local.json
