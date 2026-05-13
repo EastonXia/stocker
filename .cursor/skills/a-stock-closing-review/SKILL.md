@@ -240,8 +240,9 @@ description: A 股每日收盘复盘专用 skill,在 Claude Code / Cursor CLI �
 
 **自检通过、内容输出到对话后,必须再把同一份内容保存到本地文件。**
 
-- **保存目录**:`/Users/eastonshay/xym/life/stocker/reports/`
+- **保存目录**:`/Users/eastonshay/xym/life/stocker/reports/a-stock/`
   - 不存在则自动创建(等价于 `mkdir -p`)
+  - **注意**:与黄金复盘 `reports/gold/` 平铺隔离 —— A 股报告落在 `reports/a-stock/`,黄金报告落在 `reports/gold/`
 - **文件名**:`YYYY-MM-DD-A股收盘复盘.md`
   - 日期使用 **复盘对象的交易日**,不是当前日期
   - 例:周六跑周五数据 → 文件名是 `2026-04-24-A股收盘复盘.md`(取周五的日期)
@@ -267,8 +268,8 @@ description: A 股每日收盘复盘专用 skill,在 Claude Code / Cursor CLI �
 **输出顺序:**
 1. 抓数据 → 写复盘 → 自检 → 自检通过
 2. 输出复盘到对话
-3. 归档到 `reports/`
-4. 在对话末尾加一行:"已归档至 `reports/YYYY-MM-DD-A股收盘复盘.md`"
+3. 归档到 `reports/a-stock/`
+4. 在对话末尾加一行:"已归档至 `reports/a-stock/YYYY-MM-DD-A股收盘复盘.md`"
 
 ---
 
@@ -284,4 +285,4 @@ description: A 股每日收盘复盘专用 skill,在 Claude Code / Cursor CLI �
 6. 解读与推理的篇幅是否 ≥ 40%? 还是只堆了数据?
 7. 第 1 节"定调"和第 10 节"收官"是否各自独立,不互相重复,也不重复盘面速览?
 8. 领涨领跌板块是否正好各 7 个,不多不少?
-9. 已按"报告本地归档"章节保存到 `/Users/eastonshay/xym/life/stocker/reports/YYYY-MM-DD-A股收盘复盘.md`?
+9. 已按"报告本地归档"章节保存到 `/Users/eastonshay/xym/life/stocker/reports/a-stock/YYYY-MM-DD-A股收盘复盘.md`?
